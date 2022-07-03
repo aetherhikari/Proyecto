@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Título de pestaña -->
+
+    <!--INSERTAR logo de pestaña-->
+    <link rel="shortcut icon" href="Clase-2/media/ch-logo.png"
+
+
     <title>Document</title>
 </head>
 
@@ -36,10 +40,12 @@
     <header>
 
     </header>
+
+    <!--listas sin numeracion son UL-->
     <nav>
     <ul>
         <li>Computadoras Portatiles</li>
-        <ol>
+        <ol> <!--asi ases subtitulos o sublistas-->
             <li>Procesador I4</li>
             <li>Procesador I5</li>
         </ol>
@@ -50,6 +56,7 @@
             <li>No se que procesador</li>
         </ul>
     </ul>
+    <!-- listas con numeracion son OL-->
     <!--Desafio Mate-->
     <ol>
         <li>Calentar awita</li>
@@ -59,7 +66,7 @@
         <li>Chorro de agua suave y con amor, como le estan haciendo allá</li>
         <li>Listo mi Rey, chupa la bombilla nomas</li>
     </ol>
-
+    <!--Listas con puntito son UL-->
     <ul>
         <li><a href="Pages/Contacto.html" target="_blank">Contacto</a></li>
         <li><a href="https://plataforma.coderhouse.com/chat" target="_blank">Chat Coder</a></li>
@@ -96,47 +103,77 @@
             <p id="Parrafo piola" style="color: orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad perferendis ea placeat itaque blanditiis commodi a et? Corporis modi facere maiores! Culpa repudiandae, sed ad inventore possimus doloremque accusantium dignissimos?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto atque repellat consectetur earum, doloribus blanditiis perferendis. Dolorum maiores, eum quam iusto natus, quod optio quaerat voluptas explicabo accusantium debitis!</p>
         </article>
-        <article>
-            <img src="Clase-2/media/gatito.png" alt="Gatito mimiendo">
 
-            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=ctb9uuxJVHQ&list=RDctb9uuxJVHQ&start_radio=1"></iframe>
+
+
+        <!--insertar cosas IMAGEN- SITIO WEB Y CONTENIDO MULTIMEDIA-->
+        <article>
+            <img src="Clase-2/media/gatito.png" alt="Gatito mimiendo"> <!--alt es para una descripcion de lo que se tiene que ver-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PHcmZKZ2xVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <!--Controls para los controles, loop para que se reproduzca una y otra vez. Autoplay para que se reproduzca solo apenas arranca la pag. POSTER para la imagen-->
+            <!--MDN ingresas poniendo el cursor en el comando video. ver bien como insertar un video y audio-->
+            <video src="Clase-2/media/flower.webm" controls loop autoplay poster="">
+                Tu navegador no es compatible.
+            </video>
+
+            <audio src="Clase-2/media/t-rex.mp3" controls autoplay 
+            Tu navegador no es compatible
+            </audio>
+    
 <p>mi vieja mula ya no es lo que era</p>
+
         
         </article>
     </section>
+
+    <!--FORMULARIOS-->
     <aside>
         <form action="" method="get" enctype="multipart/form-data">
             <fieldset>
+            <!---->
                 <legend>Informacion Personal:</legend>
-                
+
+                <!--LABEL le da el titulo-->
+                <!--FOR es para poner a que valor va a pertenecer-->
                 <label for="sexo">Sexo:</label>
                 <br>
-
+                <!-- NAME le damos un nombre y se utiliza cuando se envian los datos del fomulario-->
                 <input type="radio" id="hombre" name="sexo" value="hombre">
                 <label for="hombre">Hombre</label>
                 <input type="radio" id="mujer" name="sexo" value="mujer">
                 <label for="mujer">Mujer</label>
                 <br>
 
+
                 <Label for="nombre">Nombre:</Label>
                 <br>
-
                 <input type="text" name="nombre" placeholder="Nombre">
                 <br>
 
+
                 <label for="contrasena">Contraseña:</label>
-
-
-                <input type="password" name="contrasena" placeholder="Contraseña">
+                <br>
+                  <!--INPUT es sin cierre y es para UNA linea-->
+                <!--<textarea></textarea> TEXTAREA es para escribir PARRAFOS multilinea-->
+                <!--PLACEHOLDER Marca de agua. aparece en el cuadrado de la contraseña-->
+                <!--VALUE ponemos un dato por defecto, por si necesitamos generar una contraseña-->
+                <!--Adentro del codigo no Ñ ni TILDES-->
+                <input type="password" name="contrasena" placeholder="Contraseña"> <!--INPUT se pone en TYPE=Password para ingresar contraseñas-->
                 <br>
 
+                <!--SELECTORES-->
+                <!--OPCIONES-->
                 <label for="talles">Talles:</label>
-                <select name="talles" id="talles">
+                <select name="talles" id="talles"> 
                     <option value="S">Small</option>
                     <option value="M">Medium</option>
                 </select>
                 <br>
-                <input type="enviar" name="enviar" value="Enviar">
+                <br>
+                <!--BOTON-->
+                <!--Del tipo SUBTMIT porque es para enviarlo-->
+                <input type="submit" name="enviar" value="Enviar">
             </fieldset>
 
         </form>
